@@ -99,6 +99,47 @@
                 </ol>
             </div>
         </aside>
+        <form action="/form" method="post">
+            <!-- Utilizo el br solamente para generar un salto de linea, luego con css, se implementara -->
+            <label>Formulario de registro</label> <br> <br>
+            <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br>
+            <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono"><br>
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+            <label for="password">Contrasena:</label>
+                <input type="password" id="password" name="password"><br>
+                <fieldset>
+                    <legend>Nacionalidad</legend>
+                    <select name="nacionalidad" id="nacionalidad">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                </fieldset>
+            <fieldset>
+                <legend>Genero</legend>
+                <label><input type="radio" name="genero" id="genero" checked>Masculino</label>
+                <label><input type="radio" name="genero" id="genero">Femenino</label>
+                <label><input type="radio" name="genero" id="genero">Otro</label>
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies</legend>
+                <label><input type="checkbox" name="hobbies" id="hobbies">Football</label>
+                <label><input type="checkbox" name="hobbies" id="hobbies">Basketball</label>
+                <label><input type="checkbox" name="hobbies" id="hobbies">Tennis</label>
+                <label><input type="checkbox" name="hobbies" id="hobbies">Paddle</label>
+                <label><input type="checkbox" name="hobbies" id="hobbies">Natacion</label>
+            </fieldset>
+            <progress value="85" max="100">85%</progress><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
     </main>
         <footer>
         <div>
@@ -126,3 +167,4 @@
 </html>
 <!-- Link del articulo -->
 <!-- https://www.lacapital.com.ar/la-ciudad/puente-rosario-victoria-hoy-el-peaje-habra-dos-formas-pago-ninguna-efectivo-n10254424.html -->
+
